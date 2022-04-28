@@ -1,0 +1,14 @@
+{
+ 
+    "baseUrl": "http://automationpractice.com/index.php",
+    "password": "@yousaf123!",
+    "firstname": "TestFirst" ,
+    "lastname": "TestLast",
+    "address": "Street address, P.O. Box, Company name, etc." , 
+    "city": "Lahore",
+    "postalCode" : "02351", 
+    "mobilenumber": "7778889999"
+}
+
+
+
