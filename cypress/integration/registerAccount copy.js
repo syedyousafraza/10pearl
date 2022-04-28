@@ -6,13 +6,13 @@ describe("Account Registration", function () {
     beforeEach(function () {
         cy.fixture('registryData').then(function (testdata) {
             this.testdata = testdata
-        }) 
+        })
     })
     it("Verify user register successfully", function () {
-        const indexpage =new IndexPage();
+        const indexpage = new IndexPage();
         indexpage.openWeb(this.testdata.baseUrl);
         indexpage.signinBtn();
-        indexpage.enterEmailRegisteration(randomNum+"test10pearls" + randomNum + "@test.com");
+        indexpage.enterEmailRegisteration(randomNum + "test10pearls" + randomNum + "@test.com");
         indexpage.submitCreate();
         indexpage.selectGender();
         indexpage.firstName(this.testdata.firstname);

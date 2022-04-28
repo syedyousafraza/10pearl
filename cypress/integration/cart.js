@@ -7,10 +7,10 @@ describe("Login Feature", function () {
     beforeEach(function () {
         cy.fixture('logindata').then(function (testdata) {
             this.testdata = testdata
-        }) 
+        })
     })
     it("Verify item added to cart successfully", function () {
-        const indexpage =new IndexPage();
+        const indexpage = new IndexPage();
         const cartitem = new CartPage();
         indexpage.openWeb(this.testdata.baseUrl);
         indexpage.signinBtn();
@@ -22,7 +22,7 @@ describe("Login Feature", function () {
         cartitem.addCartItems();
         cartitem.successfullyAdded("Product successfully added to your shopping cart");
         cartitem.continouCheckout();
-        cartitem.itemCount(1);        
+        cartitem.itemCount(1);
 
     });
 
@@ -61,15 +61,15 @@ describe("Login Feature", function () {
         cartitem.itemCount(1);
         cartitem.deleteCartItem();
         cartitem.successDeletion("Your shopping cart is empty.");
-        
-    
+
+
     });
 
 
 
 
 
-    
+
 });
 
 

@@ -5,10 +5,10 @@ describe("Login Feature", function () {
     beforeEach(function () {
         cy.fixture('logindata').then(function (testdata) {
             this.testdata = testdata
-        }) 
+        })
     })
     it("Verify user login successfully", function () {
-        const indexpage =new IndexPage();
+        const indexpage = new IndexPage();
         indexpage.openWeb(this.testdata.baseUrl);
         indexpage.signinBtn();
         indexpage.loginEmailAddress(this.testdata.username)
@@ -23,10 +23,10 @@ describe("Login Feature", function () {
         const indexpage = new IndexPage();
         indexpage.openWeb(this.testdata.baseUrl);
         indexpage.signinBtn();
-    //    indexpage.loginEmailAddress(this.testdata.username)
+        //    indexpage.loginEmailAddress(this.testdata.username)
         indexpage.loginPassword(this.testdata.password)
         indexpage.submitLogin();
-        indexpage.requiredFieldsAlert("An email address required.");      
+        indexpage.requiredFieldsAlert("An email address required.");
 
     });
 
@@ -35,7 +35,7 @@ describe("Login Feature", function () {
         indexpage.openWeb(this.testdata.baseUrl);
         indexpage.signinBtn();
         indexpage.loginEmailAddress(this.testdata.username)
-     //   indexpage.loginPassword(this.testdata.password)
+        //   indexpage.loginPassword(this.testdata.password)
         indexpage.submitLogin();
         indexpage.requiredFieldsAlert("Password is required.");
 
