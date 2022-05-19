@@ -11,9 +11,10 @@ FROM cypress/included:9.5.1
 RUN mkdir /app
 WORKDIR /app
 # copy cypress code from host to container
-COPY . /app
+COPY ./cypress ./cypress
+COPY ./cypress.json ./cypress.json 
 # execute the tests
-RUN npm install
+#RUN npm install
 RUN npx cypress run
 #RUN $(npm bin)/cypress verify
 #RUN $(npm bin)/cypress run --browser firefox
