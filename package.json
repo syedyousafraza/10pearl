@@ -1,0 +1,23 @@
+{
+  "name": "cypress-pageobjectmodel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^9.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syedyousafraza/10pearl.git"
+  },
+  "author": "yousaf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syedyousafraza/10pearl/issues"
+  },
+  "homepage": "https://github.com/syedyousafraza/10pearl#readme"
+}
