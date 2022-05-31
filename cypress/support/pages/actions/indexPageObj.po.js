@@ -19,6 +19,10 @@ class IndexPage {
         cy.get('#join-neu-form > .wt-grid > .wt-grid__item-xs-12')
     }
 
+    signout(){
+        return cy.get('.logout').click(); 
+     }
+
 
     enterEmailRegisteration(email) {
         cy.get('#email_create')
