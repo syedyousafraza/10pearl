@@ -23,7 +23,6 @@ describe("Login Feature", function () {
         cartitem.successfullyAdded("Product successfully added to your shopping cart");
         cartitem.continouCheckout();
         cartitem.itemCount(1);
-
     });
 
 
